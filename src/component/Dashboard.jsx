@@ -1,10 +1,10 @@
 import React from 'react'
-import { Button } from '../components/ui/button'
+// import { Button } from '../components/ui/button'
 
 function Dashboard() {
   return (
     <div>
-        <Button>Click me</Button>
+        {/* <Button>Click me</Button> */}
     </div>
   )
 }

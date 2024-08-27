@@ -1,6 +1,9 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Dashboard from './component/Dashboard';
-import Fullfilled from './component/Fullfilled';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Dashboard from "./component/Dashboard";
+import Fullfilled from "./component/Fullfilled";
+import Navbar from "./component/Navbar";
+import Animation from "./component/Animation";
+
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <div className="">
+      <Animation />
+      <Navbar />
       <RouterProvider router={router} />
     </div>
   );
