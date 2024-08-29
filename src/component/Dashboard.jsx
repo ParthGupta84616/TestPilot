@@ -1,7 +1,5 @@
 import React from "react";
 import { ComboboxDemo } from "./ComboBox";
-// import { Button } from '../components/ui/button'
-/* Add this CSS to your stylesheet */
 import "../animation.css";
 import { Button } from "../components/ui/button";
 import {
@@ -10,6 +8,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "../components/ui/tabs";
+import TableShow from "./Table";
 
 function Dashboard() {
   return (
@@ -40,7 +39,7 @@ function Dashboard() {
             <TabsTrigger value="body">Body</TabsTrigger>
           </TabsList>
           <TabsContent value="params">
-            Make changes to your params here.
+              <TableShow />
           </TabsContent>
           <TabsContent value="header">Change your header here.</TabsContent>
           <TabsContent value="body">Change your body here.</TabsContent>
