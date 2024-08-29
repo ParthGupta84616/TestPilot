@@ -4,7 +4,12 @@ import { ComboboxDemo } from "./ComboBox";
 /* Add this CSS to your stylesheet */
 import "../animation.css";
 import { Button } from "../components/ui/button";
-
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../components/ui/tabs";
 
 function Dashboard() {
   return (
@@ -23,9 +28,23 @@ function Dashboard() {
             />
           </label>
         </main>
-        <Button size="send" varient="default" >
+        <Button size="send" varient="default">
           Send
         </Button>
+      </div>
+      <div className="relative flex items-center justify-center">
+        <Tabs defaultValue="params" className="w-[1150px] mt-4">
+          <TabsList className="p-2">
+            <TabsTrigger value="params">Params</TabsTrigger>
+            <TabsTrigger value="header">Header</TabsTrigger>
+            <TabsTrigger value="body">Body</TabsTrigger>
+          </TabsList>
+          <TabsContent value="params">
+            Make changes to your params here.
+          </TabsContent>
+          <TabsContent value="header">Change your header here.</TabsContent>
+          <TabsContent value="body">Change your body here.</TabsContent>
+        </Tabs>
       </div>
     </div>
   );
