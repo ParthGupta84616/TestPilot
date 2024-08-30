@@ -39,9 +39,11 @@ function Dashboard() {
             <TabsTrigger value="body">Body</TabsTrigger>
           </TabsList>
           <TabsContent value="params">
-              <TableShow />
+            <TableShow />
           </TabsContent>
-          <TabsContent value="header">Change your header here.</TabsContent>
+          <TabsContent value="header">
+            <TableShow />
+          </TabsContent>
           <TabsContent value="body">Change your body here.</TabsContent>
         </Tabs>
       </div>
