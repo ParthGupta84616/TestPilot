@@ -9,6 +9,8 @@ import {
   TabsTrigger,
 } from "../components/ui/tabs";
 import TableShow from "./Table";
+import Json from "./Json";
+import {Response, ErrorScreen , Waiting } from "./Response";
 
 function Dashboard() {
   return (
@@ -44,8 +46,16 @@ function Dashboard() {
           <TabsContent value="header">
             <TableShow />
           </TabsContent>
-          <TabsContent value="body">Change your body here.</TabsContent>
+          <TabsContent value="body">
+            <Json />
+          </TabsContent>
         </Tabs>
+      </div>
+      <div className="relative flex items-center  justify-center mt-10">
+        <Response />
+        {/* <ErrorScreen /> */}
+        {/* <Waiting /> */}
+
       </div>
     </div>
   );

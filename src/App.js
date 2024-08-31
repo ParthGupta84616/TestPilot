@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="">
+    <div className="h-full">
       <Animation />
       <Navbar />
       <RouterProvider router={router} />
